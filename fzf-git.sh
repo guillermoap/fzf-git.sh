@@ -374,8 +374,8 @@ elif [[ -n "${ZSH_VERSION:-}" ]]; then
       fi
       eval "zle -N fzf-git-$o-widget"
       for m in emacs vicmd viins; do
-        eval "bindkey -M $m '^g^${o[1]}' fzf-git-$o-widget"
-        eval "bindkey -M $m '^g${o[1]}' fzf-git-$o-widget"
+        eval "bindkey -M $m '^[g^${o[1]}' fzf-git-$o-widget"
+        eval "bindkey -M $m '^[g${o[1]}' fzf-git-$o-widget"
       done
     done
   }
